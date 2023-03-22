@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sorteio de número</title>
+</head>
+<body>
+  <script src="function.js"></script>
+  <header>
+    <h1>Sorteio de número <img src="lucky.png" alt=""></h1> 
+      <strong>Escolha um intervalo de números para o sorteio!</strong>
+      <p>Ex: 1 a 100, 1500 a 3000 e etc. </p>
+    
+  </header>
+  
+  <div class="container">
+    <form action="">
+      <label for="">Número inicial</label>
+      <input type="number" name="min" id="min" placeholder="Coloque o número inicial">
+      <br>
+      <label for="">Número final</label>
+      <input type="number" name="max" id="max" placeholder="Coloque o número final">
+      <br>
+      <button id="sortear-btn" type="button" onclick="getRandomIntInclusive()">Sortear</button>
+      <br>
+      <label for="">O número sorteado é:</label>
+      <input type="number" id="result">
+      <br>
+      <button id="clear-btn" type="button" onclick="clearForm()">Limpar</button>
+    </form>
+  </div>
+</body>
+</html>
